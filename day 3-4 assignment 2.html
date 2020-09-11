@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>assignment2</title>
+</head>
+<body>
+	<style>
+		body{
+			background-color: #4285F4;
+			
+			text-align: center;
+		}
+
+
+		h1{
+			font-size: 70px;
+			text-align: center;
+		}
+
+
+		#text{
+			text-align: center;
+			font-size: 40px;
+
+		}
+
+
+		input{
+			width: 40%;
+			height: 40px;
+			margin: 20px;
+			border:solid 3px black;
+		}
+
+
+		button{
+			width: 30%;
+			height: 40px;
+			border:solid 3px black;
+			background-color: grey;
+		}
+
+
+		p{
+			font-size: 20px;
+
+		}
+
+	</style>
+
+
+	<h1>Welcome to LetsUpgrade</h1>
+
+
+	<div id="text">
+		Text1: <input type="text" id="Text1" placeholder="write somethings"><br>
+
+		Text2: <input type="text" id="Text2">
+
+		<p> 
+			<b>On clicking  the button value of text1 will copy in text2</b>
+		</p>
+
+		<button onclick="copyFunction()">
+		       lets copy
+		</button>
+
+
+	</div>
+
+
+	<script>
+		function copyFunction() {
+			const text1 = document.getElementById("Text1").value;
+			document.getElementById("Text2").value=text1
+
+		}
+		
+	</script>
+
+</body>
+</html>

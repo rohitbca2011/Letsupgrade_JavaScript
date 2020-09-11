@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>assignment1</title>
+	<style>
+		body{
+			background:blue;
+			text-align: center;
+		}
+		h1{
+			background-color: orange;
+			text-align: center;
+		}
+		input{
+			
+			margin:30px;
+			height: 50px;
+			width: 200px;
+			text-align: center;
+			border:solid 3px black;
+
+		}
+		#button{
+			display: inline-block;
+		}
+		#orignal{
+
+			border:solid 3px black;
+			width: 400px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<h1>Image of AVENGER</h1>
+	<img id="orignal" 
+	 src="https://www.revolvermag.com/sites/default/files/media/images/article/thor-chris-hemsworth.jpg">
+	<br>
+	<form id="button">
+	<div>
+		<input onclick="thor()" 
+		id="1st image" 
+		type="button" 
+		value="click for Thor image">
+	</div>
+	<br>
+	<div>
+		<input onclick="ironMan()" 
+		id="2nd image" 
+		type="button" 
+		value="click for ironman image">
+	</div>
+	<br>
+	<div>
+		<input onclick="captainAmerica()" 
+		id="3rd image" 
+		type="button" 
+		value="click for captainAmerica image">
+	</div>
+</form>
+<script>
+	function thor () {
+		const image = document.getElementById("orignal")
+		image.src="https://www.revolvermag.com/sites/default/files/media/images/article/thor-chris-hemsworth.jpg"
+	}
+function ironMan () {
+		const image = document.getElementById("orignal")
+		image.src="https://images.news18.com/ibnlive/uploads/2016/04/ironman.jpg"
+	}
+function captainAmerica () {
+		const image = document.getElementById("orignal")
+		image.src="https://img.etimg.com/thumb/msid-69139984,width-1200,height-900,imgsize-220108,overlay-etpanache/photo.jpg"
+	}
+</script>
+
+</body>
+</html>
